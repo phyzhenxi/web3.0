@@ -1,0 +1,23 @@
+{
+  "name": "web3.0",
+  "version": "1.0.0",
+  "description": "对区块链开发工作流程的基本认识",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phyzhenxi/web3.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phyzhenxi/web3.0/issues"
+  },
+  "homepage": "https://github.com/phyzhenxi/web3.0#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.19"
+  }
+}
