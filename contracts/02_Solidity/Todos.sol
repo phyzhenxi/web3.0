@@ -9,7 +9,7 @@ contract Todos {
 
     Todo[] public todos;
 
-    function create(string calldate _text) public {
+    function create(string calldata _text) public {
         // 3种初始化对象的方法
         todos.push(Todo({
             text: _text,
@@ -23,7 +23,7 @@ contract Todos {
 
         Todo memory todo;
         todo.text = _text;
-        todos.push(Todo(todo));
+        todos.push(todo);
     }
 
     function get(uint _index) public view returns (string memory text, bool completed) {

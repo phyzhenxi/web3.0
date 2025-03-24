@@ -36,7 +36,6 @@ contract DataLocations {
 
      function h(uint[] calldata _arr) external {
           // do something
-          _arr[0] = 123;
      }
 
 }

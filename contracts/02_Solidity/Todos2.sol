@@ -5,5 +5,5 @@ import "./StructDeclaration.sol";
 
 contract Todos2 {
     // 使用导入的Todos结构
-    Todos[] public todos;
+    Todo[] public todos;
 }

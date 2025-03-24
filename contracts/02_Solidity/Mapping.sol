@@ -30,7 +30,7 @@ contract NestedMapping {
         nestedMap[_addr][_key] = _val;
     }
 
-   function removeNestedMapVal(address _addr, uint _key){
+   function removeNestedMapVal(address _addr, uint _key) public{
         delete nestedMap[_addr][_key];
    }
 }

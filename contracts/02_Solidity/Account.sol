@@ -5,7 +5,7 @@ contract Account {
     uint256 public balance;
     uint256 public constant MAX_UINT256 = 2**256 - 1;
 
-    function deposit(uint256 _amount) public {
+    function deposit(uint256 _amount) internal {
         uint256 oldBalance = balance;
         uint256 newBalance = balance + _amount;
         balance += msg.value;

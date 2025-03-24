@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.28;
 
 interface ITest {
     function val() external view returns (uint256);
@@ -33,7 +33,7 @@ contract TestTransientStorage {
 
     function test() public {
         assembly {
-            tstore(SLOT, 321)
+           // tstore(SLOT, 321)
         }
         bytes memory b = "";
         msg.sender.call(b);
@@ -41,7 +41,7 @@ contract TestTransientStorage {
 
     function val() public view returns (uint256 v) {
         assembly {
-            v := tload(SLOT)
+          //  v := tload(SLOT)
         }
     }
 }
@@ -69,12 +69,12 @@ contract ReentrancyGuardTransient {
 
     modifier lock() {
         assembly {
-            if tload(SLOT) { revert(0, 0) }
-            tstore(SLOT, 1)
+           // if tload(SLOT) { revert(0, 0) }
+           // tstore(SLOT, 1)
         }
         _;
         assembly {
-            tstore(SLOT, 0)
+           // tstore(SLOT, 0)
         }
     }
 

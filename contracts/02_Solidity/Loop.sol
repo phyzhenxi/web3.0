@@ -3,7 +3,7 @@ pragma solidity ^0.8.28;
 
 contract Loop{
     
-    function Loop() public () {
+    function LoopTest() public {
         //for loop
         for(uint i=0; i<10; i++){
             //do something
