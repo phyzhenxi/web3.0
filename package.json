@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/phyzhenxi/web3.0#readme",
   "devDependencies": {
+    "@chainlink/contracts": "^1.3.0",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.19"
   },
